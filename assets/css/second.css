@@ -249,11 +249,20 @@ input[type=submit] {
         padding-top: 130px;
     }
     .main-section {
-        max-width: 420px;
+        max-width: 100%;
+    }
+    .main-container {
+        overflow: auto;
+    }
+    .main-section {
+        max-width: 450px;
+    }
+    .sidebar {
+        max-width: 100%;
     }
     .work {
         width: 100%;
-        margin-bottom: 20px;
+        /* margin-bottom: 20px; */
     }
     .auth-image {
         width: 100%;
@@ -261,10 +270,7 @@ input[type=submit] {
     }
 }
 
-@media only screen and (max-width: 760px) {
-    .main-section {
-        margin-bottom: 20px;
-    }
+@media only screen and (max-width: 979px) {
     .main-section,
     .sidebar {
         max-width: 100%;
@@ -273,9 +279,19 @@ input[type=submit] {
         overflow: auto;
     }
     .sidebar {
+        margin-bottom: 40px;
         width: 100%;
-        float: none;
     }
+    /*  
+    .work {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .auth-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    */
     .work {
         width: 47%;
         margin-bottom: 10px;
@@ -291,8 +307,6 @@ input[type=submit] {
     }
 }
 
-
-/*
 @media only screen and (max-width: 640px) {
     #masthead {
         position: static;
@@ -317,19 +331,18 @@ input[type=submit] {
         padding-left: 0;
         margin-left: 0;
     }
-    .work .auth-image {
+    /* .work .auth-image {
         width: 100%;
+    } */
+    .sidebar {
+        max-width: 100%;
+    }
+    .work {
+        width: 100%;
+        /* margin-bottom: 20px; */
+    }
+    .auth-image {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
-  */
-
-
-/* @media only screen and (max-width: 280px) {
-    .sidebar {
-        width: 100%;
-        float: none;
-    }
-    #connect {
-        width: 100%;
-    }
-} */
